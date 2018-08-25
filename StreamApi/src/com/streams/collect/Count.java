@@ -17,6 +17,7 @@ public class Count {
 		System.out.println("Count of elements using collectors: "+count1);
 		
 		System.out.println("This is added after add index....");
+		System.out.println("This is added in oxy workspace....");
 		
 	}
 	
