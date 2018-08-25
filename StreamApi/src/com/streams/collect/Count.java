@@ -18,7 +18,11 @@ public class Count {
 		
 		System.out.println("This is added after add index....");
 		System.out.println("This is added in oxy workspace....");
-		
 	}
-	
+
+	public void m1()
+	{
+		System.out.println("included m1() in java8");
+		System.out.println("deleting sysout for added in oxy workspace");
+	}
 }
