@@ -1,0 +1,5 @@
+sh.exe.stackdump
+.metadata/
+.recommenders/
+StreamApi/bin/com/streams/collect/
+qcls
