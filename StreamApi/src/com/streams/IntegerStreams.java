@@ -1,8 +1,7 @@
 package com.streams;
 
-import java.util.stream.DoubleStream;
+import java.util.function.IntSupplier;
 import java.util.stream.IntStream;
-import java.util.stream.LongStream;
 
 public class IntegerStreams {
 
@@ -48,28 +47,28 @@ public class IntegerStreams {
 		//System.out.println("Max number from st4 is: "+maxNumber);
 		
 //10. to generate infinite int numbers -> we can use limit to stop infinite sequence
-		/*IntSupplier is = new IntSupplier() {
+		IntSupplier is = new IntSupplier() {
 			public int getAsInt()
 			{
 				int x = (int)Math.random()*1203;
 				return x;
 			}
 		};
-		IntStream st5 = IntStream.generate(is);*/
+		//IntStream st5 = IntStream.generate(is);
 						//OR
-		/*IntStream st5 = IntStream.generate(()->{return (int) (Math.random()*1220);});
+		IntStream st5 = IntStream.generate(()->{return (int) (Math.random()*1220);});
 		System.out.println("generating 3 random numbers: ");
-		st5.limit(3).forEach(System.out::println);*/
+		st5.limit(3).forEach(System.out::println);
 		
 //11. To evaluate stream use map		
 		/*IntStream st6 = IntStream.range(10, 20).map(i -> i*2);
 		st6.forEach(System.out::println);*/
 		
 //12. map function that returns DoubleStream and LongStream 		
-		DoubleStream ds = IntStream.range(10, 20).mapToDouble(i->i);
+		/*DoubleStream ds = IntStream.range(10, 20).mapToDouble(i->i);
 		LongStream ls = IntStream.range(323, 330).mapToLong(i -> i);
 		ls.forEach(System.out::println);
 		
-		ds.distinct().filter(t -> t==12).forEach(System.out::println);
+		ds.distinct().filter(t -> t==12).forEach(System.out::println);*/
 	}
 }
