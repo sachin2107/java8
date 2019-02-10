@@ -7,7 +7,8 @@ public class Match {
 	public static void main(String[] args) {
 		Stream<Integer> st = Stream.of(1,2,3,4,5,6,7,8);
 		
-		//st.skip(5).forEach(System.out::println);
+		Stream<Integer> newSt = Stream.of(1,2,3,4,5,6,7,8);
+		newSt.skip(5).forEach(System.out::println);
 		
 //to match all elements with given predicate
 		//System.out.println("All numbers are greater than 0: "+st.allMatch(t -> t>0));
