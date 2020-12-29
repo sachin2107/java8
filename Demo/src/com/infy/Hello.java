@@ -8,6 +8,7 @@ public class Hello {
 		if(copied)
 		{
 			System.out.println("I am in copy branch...");
+			System.out.println("");
 		}else
 		{
 			System.out.println("I am in master branch...");
